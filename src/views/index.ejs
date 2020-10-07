@@ -9,47 +9,64 @@
 </head>
 
 <body>
-    <div class="configuration-box">
-        <span id="span-title">Configurção da imagem, preencha corretamente os campos.</span>
-        <div class="input-area">
-            <span>Selecione a cor da fonte (o padrão é preto)</span>
-            <select name="font-color" id="font">
-                <option value="black" selected>Preta</option>
-                <option value="white">Branca</option>
-            </select>
+    <header>
+        <div class="title">
+            <strong>Configurações da imagem.</strong>
+            <p>Preencha corretamente os campos abaixo</p>
         </div>
-        <div class="input-area">
-            <span>Titulo da vaga (max 30 caracteres)</span>
-            <input type="text" name="title" id="title">
-        </div>
-        <div class="input-area">
-            <span>Descrição da vaga (max 200 caracteres)</span>
-            <textarea name="description" id="description" rows="5" cols="5"></textarea>
-        </div>
-        <div class="input-area">
-            <span>Requerimentos da vaga (max 100 caracteres)</span>
-            <textarea name="requirements" id="requirements" rows="5" cols="5"></textarea>
-        </div>
-        <div class="input-area">
-            <span>Salário da vaga (max 50 caracteres)</span>
-            <input type="text" name="salary" id="salary">
-        </div>
+    </header>
 
-        <span>Selecione um background</span>
+    <main>
+        <div class="configuration-box">
+            <fieldset>
+                <div class="titlearea1">
+                    <label for="title">Titulo da vaga (max 30 caracteres)</label>
+                    <input type="text" name="title" id="title">
+                 </div>
 
-        <span style="display: none;" class="asjnkdhgbuyg1y2t378162">Background foi selecionado <a onclick="selectBackgroundAgain()">clique aqui para selecionar um diferente</a></span></br>
-        <div class="backgroundboxes">
-            <% for(let i =0 ; i < backgrounds.length; i++) { %>
-
-                <div class="demo_background_preview">
-                    <img src="/static/backgrounds/<%= backgrounds[i] %> " class="backgroundSetImage" onclick="getImageBackground('<%= backgrounds[i] %>')" alt="/static/backgrounds/<%= backgrounds[i] %> ">
+                 <div class="textarea-block">
+                    <label for="title">Descrição da vaga (max 200 caracteres)</label>
+                    <textarea name="description" id="description" rows="5" cols="5"></textarea>
                 </div>
 
+                <div class="textarea-block">
+                    <label for="title">Requerimentos da vaga (max 100 caracteres)</label>
+                    <textarea name="requirements" id="requirements" rows="5" cols="5"></textarea>
+                </div>
+                
+                <div class="titlearea1">
+                    <label for="title">Salário da vaga (max 50 caracteres)</label>
+                    <input type="text" name="salary" id="salary">   
+                 </div>
 
-                <% } %>
+                 <div class="Select_font_color">
+                    <label for="title">Selecione a cor da fonte (o padrão é preto)</label>
+                    <select name="font-color" id="font">
+                        <option value="black" selected>Preta</option>
+                        <option value="white">Branca</option>
+                    </select>   
+                 </div>
+
+                 <p>Selecione um background</p>
+
+                 <span style="display: none;" class="asjnkdhgbuyg1y2t378162">Background foi selecionado <a onclick="selectBackgroundAgain()"> <mark>clique aqui</mark> para selecionar um diferente</a></span></br>
+                <div class="backgroundboxes">
+                    <% for(let i =0 ; i < backgrounds.length; i++) { %>
+
+                        <div class="demo_background_preview">
+                            <img src="/static/backgrounds/<%= backgrounds[i] %> " class="backgroundSetImage" onclick="getImageBackground('<%= backgrounds[i] %>')" alt="/static/backgrounds/<%= backgrounds[i] %> ">
+                        </div>
+
+
+                        <% } %>
+                </div>
+                
+                <button class="btn-action" id="trigger">Solicitar imagem.</button>
+            
+            </fieldset>
+
         </div>
-        <button class="btn-action" id="trigger">Solicitar imagem.</button>
-    </div>
+    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

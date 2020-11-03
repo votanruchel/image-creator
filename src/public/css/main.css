@@ -3,14 +3,16 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #F0F0F7;
-    
 }
+
 header {
     height: 300px;
     background-color: #00BFA6;
 }
+
 .title {
     display: flex;
     align-items: center;
@@ -29,27 +31,32 @@ header {
     max-width: 30rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
-    margin-left: -175px ;
+    margin-left: -175px;
 }
+
 main {
     display: block;
-    background-color:#FFF;
-    width:100%;
+    background-color: #FFF;
+    width: 100%;
     max-width: 60rem;
     border-radius: .8rem;
-    margin:-3.2rem auto 3.2rem ;
+    margin: -3.2rem auto 3.2rem;
     overflow: hidden;
 }
+
 .configuration-box {
     border: 1px solid #F0F0F7;
 }
+
 main fieldset {
     padding: 0 6.4rem;
     border: 0;
 }
+
 .titlearea1 {
     padding-top: 50px;
 }
+
 .titlearea1 label {
     font-size: 1.4rem;
 }
@@ -59,9 +66,9 @@ main fieldset {
     flex-direction: column;
     width: 700px;
     height: 3rem;
-    margin-top:.8rem;
+    margin-top: .8rem;
     border-radius: .1rem;
-    background:#FFF;
+    background: #FFF;
     border: 1px solid #D0D0D0;
     outline: 0;
     padding: 0 1.6rem;
@@ -77,7 +84,7 @@ main fieldset {
 }
 
 .textarea-block textarea {
-    width: 700px;  
+    width: 700px;
     height: 16rem;
     min-height: 8rem;
     border-radius: .1rem;
@@ -98,7 +105,7 @@ main fieldset {
 
 .Select_font_color label {
     font-size: 1.4rem;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 .Select_font_color select {
@@ -113,7 +120,6 @@ main fieldset {
 }
 
 .configuration-box button {
-    
     margin-top: 40px;
     width: 200px;
     height: 50px;
@@ -125,10 +131,10 @@ main fieldset {
     font: 700 1rem Archivo;
     outline: none;
     transition: background 0.5s;
-
 }
+
 button:hover {
-    background-color:#009280;
+    background-color: #009280;
 }
 
 .btn-action {
@@ -141,13 +147,12 @@ button:hover {
 }
 
 .backgroundboxes {
-
     display: flex;
     flex-direction: row !important;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 600px;
+    width: auto;
 }
 
 .demo_background_preview {

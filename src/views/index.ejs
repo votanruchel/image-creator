@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/main.css">
-    <title>Document</title>
+    <title>M.E.O.C Image Creator 2021</title>
 </head>
 
 <body>
@@ -22,9 +22,9 @@
                 <div class="titlearea1">
                     <label for="title">Titulo da vaga (max 30 caracteres)</label>
                     <input type="text" name="title" id="title">
-                 </div>
+                </div>
 
-                 <div class="textarea-block">
+                <div class="textarea-block">
                     <label for="title">Descrição da vaga (max 200 caracteres)</label>
                     <textarea name="description" id="description" rows="5" cols="5"></textarea>
                 </div>
@@ -33,23 +33,23 @@
                     <label for="title">Requerimentos da vaga (max 100 caracteres)</label>
                     <textarea name="requirements" id="requirements" rows="5" cols="5"></textarea>
                 </div>
-                
+
                 <div class="titlearea1">
                     <label for="title">Salário da vaga (max 50 caracteres)</label>
-                    <input type="text" name="salary" id="salary">   
-                 </div>
+                    <input type="text" name="salary" id="salary">
+                </div>
 
-                 <div class="Select_font_color">
+                <div class="Select_font_color">
                     <label for="title">Selecione a cor da fonte (o padrão é preto)</label>
                     <select name="font-color" id="font">
                         <option value="black" selected>Preta</option>
                         <option value="white">Branca</option>
-                    </select>   
-                 </div>
+                    </select>
+                </div>
 
-                 <p>Selecione um background</p>
+                <p>Selecione um background</p>
 
-                 <span style="display: none;" class="asjnkdhgbuyg1y2t378162">Background foi selecionado <a onclick="selectBackgroundAgain()"> <mark>clique aqui</mark> para selecionar um diferente</a></span></br>
+                <span style="display: none;" class="asjnkdhgbuyg1y2t378162">Background foi selecionado <a onclick="selectBackgroundAgain()"> <mark>clique aqui</mark> para selecionar um diferente</a></span></br>
                 <div class="backgroundboxes">
                     <% for(let i =0 ; i < backgrounds.length; i++) { %>
 
@@ -60,9 +60,9 @@
 
                         <% } %>
                 </div>
-                
+
                 <button class="btn-action" id="trigger">Solicitar imagem.</button>
-            
+
             </fieldset>
 
         </div>
@@ -82,7 +82,7 @@
         }
 
         function selectBackgroundAgain() {
-            document.querySelector('.backgroundboxes').style.display = 'block';
+            document.querySelector('.backgroundboxes').style.display = 'flex';
             document.querySelector('.demo_background_preview').style.display = 'block';
             document.querySelector('.asjnkdhgbuyg1y2t378162').style.display = 'none';
         }

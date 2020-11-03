@@ -46,7 +46,7 @@ exports.createImage = async(req, res) => {
 
 
 
-    const background = await Jimp.read(__dirname + '/../public/backgrounds/' + background_selected + '.jpg').then(res => {
+    const background = await Jimp.read(__dirname + '/../public/backgrounds/' + background_selected + '.png').then(res => {
         console.log(`Image Loaded!`);
         return res;
     }).catch(err => {
